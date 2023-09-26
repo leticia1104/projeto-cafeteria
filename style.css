@@ -18,7 +18,6 @@
     src: url(fontes/Lato/Lato-Regular.ttf);
 }
 
-
 body {
     padding: 0;
     margin: 0;
@@ -116,7 +115,6 @@ span {
     color: #ffffff;
     font-family: "Fraunces, Serif";
 }
-
 
 .parallax2 {
     background-image: url(assets/parallax-imagem2.jpg);
