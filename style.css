@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "Fraunces, Serif";
+    src: url(fontes/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url(fontes/Fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(fontes/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(fontes/Lato/Lato-Regular.ttf);
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+iframe {
+    width: 800px;
+    height: 300px;
+    margin: 50px;
+}
+
+span {
+    color: #D8B484;
+}
+
+/* Seção topo */
+.topo {
+    width: 100%;
+    background-color: #604829;
+    position: fixed;
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* Alinhe o conteúdo horizontalmente */
+    align-items: center; /* Alinhe o conteúdo verticalmente */
+}
+
+.topo ul {
+    list-style: none; /* Remova os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+.topo li {
+    margin-left: 15px; /* Adicione margem entre os itens da lista */
+}
+
+.topo a {
+    color: #C3A57C;
+    text-decoration: none;
+    text-shadow: #000000 5px 5px 3px;
+    font-family: 'Oswald';
+}
+
+.logo {
+    height: 100px;
+    width: auto; /* Use 'auto' para manter a proporção da imagem */
+    max-width: 100%; /* Garanta que a largura máxima da imagem não exceda a largura da tela */
+    margin-left: 10%;
+}
+
+/* Seção sobre */
+.sobre p {
+    width: 863px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    color: #666;
+    text-align: center;
+    margin-bottom: 80px; 
+    font-family: 'Lato';
+    line-height: 35px;
+}
+
+
+.sobre h2 {
+    margin-top: 80px; 
+    text-align: center;
+    color: #c4a47c;
+    font-family: 'Oswald';
+}
+
+.frases {
+    color: #ffffff;
+    border: 1px solid #604829;
+    background-color: #604829;
+    padding: 5px 10px;
+    margin: 20px 760px;
+    font-family: 'Fraunces';
+    font-size: 20px;
+}
+
+/* Seção parallax */
+.parallax1 {
+    background-image: url(assets/parallax-imagem1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    padding: 400px 0;
+    font-size: 60px;
+    color: #ffffff;
+    font-family: "Fraunces, Serif";
+}
+
+
+.parallax2 {
+    background-image: url(assets/parallax-imagem2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100%;
+    padding: 170px 0; 
+}
+
+.parallax3 {
+    background-image: url(assets/parallax-imagem3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100%;
+    padding: 170px 0;
+}
+
+.parallax4 {
+    background-image: url(assets/parallax-imagem4.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    font-family: 'Oswald';
+}
+
+.parallax4 h2 {
+    color: #ffffff;
+    border: 1px solid #604829;
+    background-color: #604829;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.parallax4 .parallax4-content {
+    border: 1px solid #604829; 
+    padding: 20px;
+    margin: 0 auto; /* Centralizar o conteúdo */
+    max-width: 500px; /* Definir a largura máxima */
+    background-color: #604829; 
+    color: #ffffff;
+}
+
+/* Seção horários */
+.secao-horarios {
+    background-image: url(assets/cafeteria.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    padding-top: 170px;
+    padding-bottom: 20px;
+    font-family: 'Oswald';
+}
+
+.secao-horarios h2 {
+    margin-top: -50px;
+    margin-bottom: 90px;
+}
+
+.secao-horarios dt, .secao-horarios dd {
+    display: block;
+    position: relative; /* Adicione uma linha horizontal como uma divisória */
+}
+
+.secao-horarios dt {
+    text-align: left;
+    margin-left: 500px;
+    margin-bottom: 20px;  
+}
+
+.secao-horarios dd {
+    text-align: right;
+    margin-right: 500px; 
+    margin-top: -40px;
+    margin-bottom: 20px;
+    color: #acacac;
+}
+
+.secao-horarios dt::after {
+    content: "";  /* Cria um conteúdo vazio para o pseudo-elemento */
+    position: absolute; 
+    bottom: 10px; 
+    left: 110px;
+    right: 620px;
+    border: 1px solid #ffffff;
+}
+
+.rodape {
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;    
+}
+
+.seta {
+    position: fixed;
+    left: 1800px;
+    bottom: 55px;
+}
